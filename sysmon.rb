@@ -7,10 +7,10 @@ class Sysmon < Formula
   # Linux users: use install.sh or download from releases
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/aalokjha-gits/sysmon/releases/download/v#{version}/sysmon-universal"
-    sha256 "2c49f5c4f9686d67bde1f610f9fb89a5bd8a5ea34fa8ebacc108b02ee15f5906"
+    sha256 "dc8035127ca821ebe28f819a72211ffc28447273167eab254de99b87017a3cdd"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/aalokjha-gits/sysmon/releases/download/v#{version}/sysmon-x86_64-apple-darwin"
-    sha256 "ff9e111ffe831befcbfe47e3c898f0205cc4a33a471e8aae62253731d7ec8b6f"
+    sha256 "eb70eeb0093ea1d624a32bceaba31f318364eac9edf6a9cfde2846763694a93b"
   end
 
   def install
