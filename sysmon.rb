@@ -1,16 +1,16 @@
 class Sysmon < Formula
   desc "Lightweight system monitoring dashboard with web UI"
   homepage "https://github.com/aalokjha-gits/sysmon"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   # Linux users: use install.sh or download from releases
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/aalokjha-gits/sysmon/releases/download/v#{version}/sysmon-universal"
-    sha256 "dc8035127ca821ebe28f819a72211ffc28447273167eab254de99b87017a3cdd"
+    sha256 "13e1830b6036972678dc7785cd8b16293f45f68d212a9bda467ab7d61eef12c7"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/aalokjha-gits/sysmon/releases/download/v#{version}/sysmon-x86_64-apple-darwin"
-    sha256 "eb70eeb0093ea1d624a32bceaba31f318364eac9edf6a9cfde2846763694a93b"
+    sha256 "ed9c5c9e1c0e73a90c654090b6cbdc3fc9f91738710572ec2bf0d100e7fdc808"
   end
 
   def install
